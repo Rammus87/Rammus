@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲單頁1</title>
+    <link rel="stylesheet" href="/style/gamepage2.css">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- logo -->
+        <div class="logo" onclick="goIndex()">
+          <img src="./img/header/logo.png" alt="" />
+        </div>
+        <!-- navbar -->
+        <nav>
+          <ul>
+            <li>
+              <a href="#"
+                >遊戲 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">射擊</a></li>
+                  <li><a href="#">休閒</a></li>
+                  <li><a href="#">動作</a></li>
+                  <li><a href="#">運動</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                商店 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">商品頁</a></li>
+                  <li><a href="#">錢包</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="./news.html"
+                >最新消息 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">新聞</a></li>
+                  <li><a href="#">遊戲更新</a></li>
+                  <li><a href="#">優惠活動</a></li>
+                  <li><a href="#">新品上架</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                關於 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">公司介紹</a></li>
+                  <li><a href="#">徵才</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                客服 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">常見問題</a></li>
+                  <li><a href="#">客服信箱</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="navbar-icons">
+          <div><img src="./img/header/search_.png" alt="" /></div>
+          <div id="GoWalletPage">
+            <img src="./img/header/wallet.png" alt="" />
+          </div>
+          <div id="GoLoginPage"><img src="./img/header/user.png" alt="" /></div>
+        </div>
+      </header>
+      
+      <!-- section1 -->
+    <div class="page1">
+        <div class="gametr">
+            <a href="#">TheGameC ></a>
+            <a href="#">遊戲 ></a>
+            <a href="#">CSO絕對武力</a>
+        </div>
+        <div class="main">
+            <div class="gameLeft">
+                <div class="showimg">
+                    <img id="img1" src="/img/login/Rammus_0.jpg" alt="">
+                    <img id="img2" src="/img/login/下载.jpeg" alt="">
+                    <img id="img3" src="/img/login/Rammus_0.jpg" alt="">
+                    <img id="img4" src="/img/login/Rammus_0.jpg" alt="">
+                    <img id="img5" src="/img/login/Rammus_0.jpg" alt="">
+                </div>
+                <div class="gamesimg">
+                    <a href="#" onclick="showImage('img1')"><img src="/img/login/Rammus_0.jpg" alt=""></a>
+                    <a href="#" onclick="showImage('img2')"><img src="/img/login/下载.jpeg" alt=""></a>
+                    <a href="#" onclick="showImage('img3')"><img src="/img/login/Rammus_0.jpg" alt=""></a>
+                    <a href="#" onclick="showImage('img4')"><img src="/img/login/Rammus_0.jpg" alt=""></a>
+                    <a href="#" onclick="showImage('img5')"><img src="/img/login/Rammus_0.jpg" alt=""></a> 
+                </div>
+            </div>
+            <div class="gameRight">
+                <H2>幻想神域</H2>
+                <div>
+                    <a class="gamestyle" href="#">冒險</a>
+                    <a class="gamestyle" href="#">第三人稱</a>
+                </div>
+                <div class="gamefont">Counter-Strike 是一款經典的第一人稱射擊遊戲,玩家需要根據任務目標進行射擊,燒毀物品,拆除炸彈等各種戰鬥行動,遊戲以恐怖分子和反恐份子對抗為主題,具有深度和高度的槍械操作和社交性的遊戲。</div>
+                <div class="gameinf">
+                    <p>發行日期 : 2023 年 4 月 7 日</p>
+                    <p>發行商 : Valve</p>
+                    <p>營運商 : TheGameC</p>
+                </div>
+                <p>年齡限制 : 普遍級</p>
+                <div class="gamebtn">
+                    <p>官方網站</p>
+                    <p>下載連結</p>
+                </div>                
+            </div>
+        </div>
+        <div class="divlogin">
+            <p>登入您的帳號,與大家一同享受的遊戲吧 ! !</p>
+            <button class="GamepageLogin">登入</button>
+        </div>
+        <h2 class="newh2">我的遊戲</h2>
+        <p>我當前已經在玩的遊戲有<span></span></p>
+        <div class="mygame">
+            <div class="mygamepd">
+                <div class="mygamedv">
+                    <div class="mygameimg">
+                        <img src="/img/login/Rammus_0.jpg" alt="">
+                    </div>
+                    <div class="mygamemain">
+                        <h3>CSO 絕對武力</h3>
+                        <span>射擊</span>
+                        <span>第一人稱</span>           
+                    <p>
+                        Counter-Strike 是一款經典的第一人稱射擊遊戲,玩家需要根據任務目標進行射擊,燒毀物品,拆除炸彈等各種戰鬥行動,遊戲以恐怖分子和反恐份子對抗為主題,具有深度和高度的槍械操作和社交性的遊戲。
+                    </p>
+                    </div>
+                    <div class="mygamed">
+                        <p>官方網站</p>
+                        <p>下載連結</p>
+                    </div>      
+                </div>
+                <div class="mygamedv">
+                    <div class="mygameimg">
+                        <img src="/img/login/Rammus_0.jpg" alt="">
+                    </div>
+                    <div class="mygamemain">
+                        <h3>CSO 絕對武力</h3>
+                        <span>射擊</span>
+                        <span>第一人稱</span>           
+                    <p>
+                        Counter-Strike 是一款經典的第一人稱射擊遊戲,玩家需要根據任務目標進行射擊,燒毀物品,拆除炸彈等各種戰鬥行動,遊戲以恐怖分子和反恐份子對抗為主題,具有深度和高度的槍械操作和社交性的遊戲。
+                    </p>
+                    </div>
+                    <div class="mygamed">
+                        <p>官方網站</p>
+                        <p>下載連結</p>
+                    </div>      
+                </div>
+                <div class="mygamedv">
+                    <div class="mygameimg">
+                        <img src="/img/login/Rammus_0.jpg" alt="">
+                    </div>
+                    <div class="mygamemain">
+                        <h3>CSO 絕對武力</h3>
+                        <span>射擊</span>
+                        <span>第一人稱</span>           
+                    <p>
+                        Counter-Strike 是一款經典的第一人稱射擊遊戲,玩家需要根據任務目標進行射擊,燒毀物品,拆除炸彈等各種戰鬥行動,遊戲以恐怖分子和反恐份子對抗為主題,具有深度和高度的槍械操作和社交性的遊戲。
+                    </p>
+                    </div>
+                    <div class="mygamed">
+                        <p>官方網站</p>
+                        <p>下載連結</p>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <div class="footer-s1">
+        <div class="footer-logo">
+          <img src="./img/footer/logo.png" alt="" />
+        </div>
+        <div class="footer-content">
+          <ul>
+            <li><a href="#">隱私權政策</a></li>
+            <li><a href="#">使用條款</a></li>
+            <li><a href="#">法律資訊</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">公司資訊</a></li>
+            <li><a href="#">工作機會</a></li>
+            <li><a href="#">據點</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">客服支援</a></li>
+            <li><a href="#">錢包</a></li>
+            <li><a href="#">我需要協助</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Cookie政策</a></li>
+            <li><a href="#">Cookie設定</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-s2">
+        <p>©TheGameC | XXX遊戲代理公司 客服專線：02-000-0000</p>
+      </div>
+    </footer>
+    <script>
+        function showImage(id) {
+        var images = document.getElementsByClassName('showimg')[0].getElementsByTagName('img');
+            for (var i = 0; i < images.length; i++) {
+                if (images[i].id == id) {
+                    images[i].style.display = 'block';
+                } else {
+                    images[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

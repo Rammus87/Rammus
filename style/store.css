@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+.container {
+    display: flex; /* 使用flexbox布局 */
+    flex-direction: row-reverse; /* 將容器中的元素排列成一行 */
+    position: relative;
+    height: 2000px;
+    width: 83%;
+    margin: 20px auto;
+  }
+
+  .fixed-panel {
+    position: sticky;
+    top: 0;
+    height: 80%;
+    width: 20%;
+    z-index: 1;
+    margin: 0 1%;
+  }
+
+  .page-content {
+    flex: 1; /* 設置頁面內容佔用容器中剩餘的空間 */
+    background-color: gray;
+  }
+
+
+  .showimg{
+    width: 95%;
+    height: 33%;
+    margin: 2% auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+  }
+
+  .showimg img{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    border-radius: 22px;
+  }
+
+  .storecart{
+    width: 94%;
+    height: 60%;
+    margin: 8% auto;
+    background-color: white;
+    border-radius: 18px;
+  }
+
+  .storelist{
+    width: 94%;
+    margin: 2% auto;
+  }
+
+  .storelist ul{
+    display: flex; /* 將storelist設置為flexbox */
+    justify-content: space-between;
+    margin: 0px 10%;
+  }
+
+  .storelist ul li{
+    display: inline-block;
+    background-color: lightblue;
+    padding: 0px 10px;
+    border-radius: 12px;
+    margin: 0;
+  }
+
+  .storebox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% auto;
+    width: 97%;
+    height: 38%;
+    margin-bottom: 50px;
+  }
+
+  .item {
+    flex: 1 0 25%;
+    margin: 10px 2%;
+    background-color: white;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 12px;
+  }
+
+  .storeboximg{
+    height: 65%;
+    background: url(/img/login/Rammus_0.jpg);
+    border-radius: 12px 12px 0 0;
+  }
+
+  .storeboxcon{
+    padding: 15px;
+  }
+
+  .storeboxcon span{
+    font-size: 8px;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 0px 5px;
+    margin: 0px 0px 0px 5px;
+  }
+
+  .storebox h3{
+    color: gray;
+    letter-spacing: 2px;
+  }
+
+  .storebox h2{
+    letter-spacing: 2px;
+    margin: 5px 0px 5px 10px
+  }
+
+
+  .onsale{
+    height: 36%;
+    width: 97%;
+    margin: 2% auto;
+    background-color: darkblue;
+  }
+/* 輪播 */
+
+  .storeboxslider{
+    margin: 2% auto;
+    width: 97%;
+    height: 15%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+  }
+  
+  .slidermain {
+    flex: 1 0 66%;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .sliderimg {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .sliderimg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .sliderlist {
+    flex: 1 0 33%;
+    padding: 0 20px;
+    background-color: aqua;
+  }
+  
+  .sliderbtn {
+    width: 100%;
+    height: 10%;
+    margin: 20px 30%;
+    display: flex;
+    
+  }
+  
+  .sliderbtn button {
+    width: 20px;
+    margin: 5px auto;
+    height: 12px;
+    border-radius: 20px;
+    border-width: 0;
+  }
+  
+  .sliderbtn button:hover {
+    background-color: black
+  }
+
+  /* 優惠 */
+
+
+
+  .onsaleleft{
+    float: left;
+    width: 62%;
+    margin-left: 15px;
+    height: 600px;
+    background-color: cornflowerblue;
+  }
+
+  .onsaleleftimg{
+    height: 500px;
+    background: url(/img/login/Rammus_0.jpg);
+  }
+
+  .onsalerprice{
+    padding: 20px;
+  }
+
+  .onsaleleft span{
+    font-size: 52px;
+    background-color: gray;
+  }
+
+  .onsaleright{
+    float: right;
+    width: 32%;
+    height: 600px;
+    margin-right: 20px;
+    
+  }
+  
+  .onsale h3{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+  }
+  
+  .onsalert{
+    height: 47%;
+    margin-bottom: 10%;
+  }
+
+  .onsalerd{
+    height: 47%;
+    
+  }
+
+  .onsaleimg{
+    background: url(/img/login/卡薩丁2.jpeg);
+    height: 75%;
+  }
+
+  .onsaleimg2{
+    background: url(/img/login/Rammus_0.jpg);
+    height: 75%;
+  }
+
+  .onsaleprice{
+    background-color: cornflowerblue;
+    height: 25%;
+    padding-left: 20px;
+    padding-top: 7%;
+  }
+
+  .onsaleprice span{
+    background-color: gray;
+    padding: 8px;
+    font-size: 20px;
+  }
+
+  .onsaleprice span:first-child {
+    background-color: green;
+  }
+
+  .onsalerprice span:first-child {
+    background-color: green;
+  }

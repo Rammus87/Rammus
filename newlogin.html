@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/newlogin.css">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <div class="logo" onclick="goIndex()">
+          <img src="./img/header/logo.png" alt="" />
+        </div>
+        <!-- navbar -->
+        <nav>
+          <ul>
+            <li>
+              <a href="#"
+                >遊戲 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">射擊</a></li>
+                  <li><a href="#">休閒</a></li>
+                  <li><a href="#">動作</a></li>
+                  <li><a href="#">運動</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                商店 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">商品頁</a></li>
+                  <li><a href="#">錢包</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="./news.html"
+                >最新消息 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">新聞</a></li>
+                  <li><a href="#">遊戲更新</a></li>
+                  <li><a href="#">優惠活動</a></li>
+                  <li><a href="#">新品上架</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                關於 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">公司介紹</a></li>
+                  <li><a href="#">徵才</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                客服 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">常見問題</a></li>
+                  <li><a href="#">客服信箱</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="navbar-icons">
+          <div><img src="./img/header/search_.png" alt="" /></div>
+          <div id="GoWalletPage">
+            <img src="./img/header/wallet.png" alt="" />
+          </div>
+          <div id="GoLoginPage"><img src="./img/header/user.png" alt="" /></div>
+        </div>
+      </header>
+    <div class="container">
+        <div class="container">
+            <div class="loginleft">
+              <button class="btnt"  href="">Login</button>
+              <button class="btnd" href="">Sign in</button>
+            </div>
+            <from class="loginpage">
+              <div class="wrapper">
+                  <div class="text">
+                      <div class="logo"><img src="/img/header/logo.png" alt=""></div>
+                      <input type="email" class="loginu" placeholder="Email">
+                      <input type="password" class="loginu" placeholder="Password">
+                      <input type="submit" class="logins" value="Get started">
+                      <div class="line-with-circle">
+                        <hr />
+                        <div class="circle"></div>
+                        <hr />
+                      </div>
+                      <div class="logobtn">
+                        <a href="#">Facebook</a>
+                        <a href="#">Google+</a>
+                      </div>
+                  </div>
+              </div>
+            </from>
+            <div class="signinpage">
+              <from class="wrapper">
+                  <div class="text">
+                      <div class="logo"><img src="/img/header/logo.png" alt=""></div>
+                      <input type="text" class="loginu" placeholder="Name">
+                      <input type="email" class="loginu" placeholder="Email">
+                      <input type="password" class="loginu" placeholder="Password">
+                      <input type="tel" class="loginu" placeholder="Phone number">
+                      <input type="submit" class="logins" value="Rigister">
+                      <div class="logobtn">
+                        <a href="#">Facebook</a>
+                        <a href="#">Google+</a>
+                      </div>
+                  </div>
+              </from>
+            </div>
+          </div>
+    </div>
+    
+    <script>
+        document.querySelector(".btnd").addEventListener("click", function () {
+        document.querySelector(".btnt").style.backgroundColor = "transparent";
+        document.querySelector(".btnd").style.backgroundColor = "white";
+        document.querySelector(".btnd").style.color = "black";
+        document.querySelector(".btnt").style.color = "white";
+        document.querySelector(".signinpage").style.right = "0";
+        document.querySelector(".signinpage").style.visibility = "visible";
+    });
+        document.querySelector(".btnt").addEventListener("click", function () {
+        document.querySelector(".btnt").style.backgroundColor = "white";
+        document.querySelector(".btnd").style.backgroundColor = "transparent";
+        document.querySelector(".btnd").style.color = "white";
+        document.querySelector(".btnt").style.color = "black";
+        document.querySelector(".signinpage").style.right = "-300%";
+        document.querySelector(".signinpage").style.visibility = "visible";
+    });
+
+        
+
+    </script>
+</body>
+</html>

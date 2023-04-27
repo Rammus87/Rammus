@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css" />
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style/login.css">
+    <title>Login</title>
+</head>
+<body>
+     <!-- header -->
+    <header>
+        <!-- logo -->
+        <div class="logo" onclick="goIndex()">
+          <img src="./img/header/logo.png" alt="" />
+        </div>
+        <!-- navbar -->
+        <nav>
+          <ul>
+            <li>
+              <a href="#"
+                >遊戲 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">射擊</a></li>
+                  <li><a href="#">休閒</a></li>
+                  <li><a href="#">動作</a></li>
+                  <li><a href="#">運動</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                商店 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">商品頁</a></li>
+                  <li><a href="#">錢包</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="./news.html"
+                >最新消息 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">新聞</a></li>
+                  <li><a href="#">遊戲更新</a></li>
+                  <li><a href="#">優惠活動</a></li>
+                  <li><a href="#">新品上架</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                關於 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">公司介紹</a></li>
+                  <li><a href="#">徵才</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                客服 <img src="./img/header/Vector(down).png" alt=""
+              /></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">常見問題</a></li>
+                  <li><a href="#">客服信箱</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="navbar-icons">
+          <div><img src="./img/header/search_.png" alt="" /></div>
+          <div id="GoWalletPage">
+            <img src="./img/header/wallet.png" alt="" />
+          </div>
+          <div id="GoLoginPage"><img src="./img/header/user.png" alt="" /></div>
+        </div>
+      </header>
+    <!-- header -->
+    <!-- main -->
+      <div class="container">
+        <div class="img">
+          <button class="btnt"  href="">Login</button>
+          <button class="btnd" href="">Sign in</button>
+        </div>
+        <div class="loginpage">
+          <div class="wrapper">
+              <div class="text">
+                  <div class="logo"><img src="/img/header/logo.png" alt=""></div>
+                  <input type="email" class="loginu" placeholder="Email">
+                  <input type="password" class="loginu" placeholder="Password">
+                  <input type="submit" class="logins" value="Get started">
+                  <div class="hro">---------------- o -----------------</div>
+                  <div class="logobtn">
+                    <a href="#">Facebook</a>
+                    <a href="#">Google+</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="signinpage">
+          <div class="wrapper">
+              <div class="text">
+                  <div class="logo"><img src="/img/header/logo.png" alt=""></div>
+                  <input type="text" class="loginu" placeholder="Name">
+                  <input type="email" class="loginu" placeholder="Email">
+                  <input type="password" class="loginu" placeholder="Password">
+                  <input type="tel" class="loginu" placeholder="Phone number">
+                  <input type="submit" class="logins" value="Rigister">
+                  <div class="logobtn">
+                    <a href="#">Facebook</a>
+                    <a href="#">Google+</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function toggleSignin() {
+  // 取得Loginpage和Signinpage的元素
+  var loginPage = document.querySelector(".loginpage");
+  var signinPage = document.querySelector(".signinpage");
+
+  // 切換它們的顯示與隱藏
+  if (loginPage.style.display === "none") {
+    loginPage.style.display = "block";
+    signinPage.style.display = "none";
+    // 更改btnt和btnd的背景色
+    document.querySelector(".btnt").style.backgroundColor = "#fff";
+    document.querySelector(".btnd").style.backgroundColor = "transparent";
+    document.querySelector(".btnt").style.color = "#000";
+    document.querySelector(".btnd").style.color = "#fff";
+
+    // 添加CSS動畫
+    loginPage.style.animation = "slideInLeft 0.5s ease-in-out forwards";
+    signinPage.style.animation = "slideOutLeft 0.5s ease-in-out forwards";
+  } else {
+    loginPage.style.display = "none";
+    signinPage.style.display = "block";
+    // 更改btnt和btnd的背景色
+    document.querySelector(".btnt").style.backgroundColor = "transparent";
+    document.querySelector(".btnd").style.backgroundColor = "#fff";
+    document.querySelector(".btnt").style.color = "#fff";
+    document.querySelector(".btnd").style.color = "#000";
+
+    // 添加CSS動畫
+    signinPage.style.animation = "slideInLeft 0.5s ease-in-out forwards";
+    loginPage.style.animation = "slideOutLeft 0.5s ease-in-out forwards";
+  }
+}
+
+// 監聽btnt和btnd的click事件
+document.querySelector(".btnt").addEventListener("click", toggleSignin);
+document.querySelector(".btnd").addEventListener("click", toggleSignin);
+
+      </script>
+    <!-- main -->
+</body>
+</html>

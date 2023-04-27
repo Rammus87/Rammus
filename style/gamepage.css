@@ -1,0 +1,329 @@
+body {
+  background-color: lightslategray;
+  position: relative;
+  background-image: url("../img/Games/CSO/5.jpg");
+  background-size: contain;
+}
+
+
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.stylelogo {
+  width: 25%;
+  height: 20%;
+  background-color: transparent;
+  position: absolute;
+  right: 50px;
+  top: 40px;
+  user-select: none;
+}
+
+.page1 {
+  height: 1600px;
+  width: 73%;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 12px;
+  color: white;
+}
+
+.gametr {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  height: 20px;
+  width: 100%;
+}
+
+
+
+.gametr a {
+  color: white;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main {
+  height: 30%;
+  width: 100%;
+}
+
+.gameLeft {
+  height: 100%;
+  width: 74%;
+  float: left;
+}
+
+.showimg {
+  width: 100%;
+  height: 75%;
+  padding: 2px;
+  box-sizing: border-box;
+  background-color: black;
+  position: relative;
+}
+
+.showimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  padding: 15px 0;
+  background-color: black;
+  position: absolute;
+}
+
+.gamesimg {
+  background-color: black;
+  width: 100%;
+  height: 23.8%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.gamesimg a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 calc(20% - 10px);
+  margin: 0 5px;
+}
+
+.gamesimg a img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-right: 3%;
+}
+
+.gameRight {
+  float: right;
+  height: 100%;
+  width: 25%;
+  padding: 20px;
+  background-color: #404040;
+  border-radius: 3px;
+}
+
+h2 {
+  color: #fff;
+  font-weight: bolder;
+  margin-bottom: 12px;
+}
+
+.gamestyle {
+  text-decoration: none;
+  font-size: 2px;
+  color: black;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0px 6px;
+  margin: 10px 3px;
+  border: 1px solid silver;
+}
+
+.gamefont {
+  font-size: 12px;
+  margin: 20px auto;
+  color: #fff;
+}
+
+.gameinf {
+  line-height: 0;
+}
+
+.gameinf p {
+  margin-bottom: 20px;
+}
+
+.gamebtn {
+  margin: 50% auto;
+  text-align: center;
+  
+}
+
+.gamebtn a {
+  display: inline-block;
+  background-color: black;
+  font-size: 13px;
+  padding: 8px 16px;
+  margin: 4px;
+  border-radius: 5px;
+  
+}
+
+.divlogin {
+  background-color: #404040;
+  margin: 40px auto;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 3px;
+}
+
+.divlogin p {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 18px;
+  color: white;
+}
+
+.GamepageLogin {
+  border-radius: 5px;
+  height: 32px;
+  width: 55px;
+  margin: 19px 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newh2 {
+  margin-bottom: 0px;
+}
+
+.mygame {
+  height: 35%;
+  width: 100%;
+  background-color: #404040;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.mygamepd {
+  height: 100%;
+  padding: 25px;
+}
+
+.mygamedv {
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+  width: 95%;
+  margin: 10px auto;
+  background-color: red;
+  border-radius: 3px;
+}
+
+.mygameimg {
+  flex: 1;
+  flex-basis: 25%;
+}
+
+.mygamemain {
+  flex: 2;
+  flex-basis: 45%;
+}
+
+.mygamed {
+  flex: 1;
+  flex-basis: 30%;
+}
+
+.mygamedv div {
+  color: white;
+}
+
+.mygameimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: black;
+}
+
+.mygamedv p {
+  font-size: 10px;
+}
+
+.mygamed {
+  background-color: black;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-basis: 25%;
+}
+
+.mygamed a {
+  display: inline-block;
+  background-color: gray;
+  margin: 0px 5px 20px 5px;
+  border-radius: 3px;
+  padding: 2px 10px;
+  font-size: 8px;
+}
+
+.mygamemain {
+  background-color: black;
+  padding: 2%;
+}
+
+.mygamemain span {
+  font-size: 8px;
+  background-color: gray;
+  border-radius: 3px;
+  padding: 2px 10px;
+}
+
+.mygamemain p {
+  font-size: 8px;
+  margin-top: 8px;
+}
+/* 輪播 */
+
+
+.splide__track{
+  height: 100%;
+  width: 74%;
+  float: left;
+  background-color: red;
+}
+
+.splide__list{
+  width: 100%;
+  height: 75%;
+  padding: 2px;
+  box-sizing: border-box;
+  background-color: black;
+  position: relative;
+}
+
+.splide__slide {
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    padding: 15px 0;
+    background-color: black;
+    position: absolute;
+  
+}
+
+.splide__slide.is-active {
+  opacity: 1;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main{
+  background-color: red;
+  height: 550px;
+}
